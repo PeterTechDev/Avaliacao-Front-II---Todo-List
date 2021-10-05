@@ -16,4 +16,22 @@
 //         }))
 // })
 
-let today = new Date()
+
+// ADCIONAR DATA ATUAL NA TELA 
+const todayDate = document.getElementById('todayDate');
+let data = new Date();
+
+const addZero=(number)=>{
+    if (number <= 9) 
+        return "0" + number;
+    else
+        return number; 
+}
+function today(){
+    let date = (addZero(data.getDate().toString()) + "/" + (addZero(data.getMonth()+1).toString()) + "/" + data.getFullYear());
+    return date;
+}
+
+window.onload=()=> todayDate.innerText = today();
+
+
