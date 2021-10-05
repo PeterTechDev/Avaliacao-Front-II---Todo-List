@@ -29,4 +29,4 @@
 
 ### Página de login
 - [ ] Exibir a data atual
-- [ ] Validação dos campos não podem estar vazios
+- [ ] Validação dos campos: Não podem estar vazios, 
