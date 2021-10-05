@@ -4,12 +4,12 @@
 ## Instruções e requisitos do entregável
 #### A primeira página deve ter um formulário com os inputs:
 - [ x ] Data de criação: o usuário não poderá alterar esse input, mas ele deve ser exibido.
-- [ ] Data limite da tarefa: data que o usuário deseja terminar aquela tarefa.
-- [ ] Descrição: texto da tarefa.
-- [ ] Botão de submit.
+- [ ? ] Data limite da tarefa: data que o usuário deseja terminar aquela tarefa.
+- [ ? ] Descrição: texto da tarefa.
+- [ x ] Botão de submit.
 
 #### Validações:
-- [ ] Nenhum campo pode ser vazio. 
+- [ x ] Nenhum campo pode ser vazio. 
 - [ ] A descrição deve ter mais que 10 caracteres.
 - [ ] _IMPORTANTE_: Quando o usuário não preencher corretamente deve ser exibido um alerta indicando que existem erros na criação da tarefa.
 - [ ] _OPCIONAL_: a data limite da tarefa deve ser hoje ou no futuro.
@@ -26,6 +26,7 @@
 - [ ] Nas tarefas onde o atributo “completed": false” o texto do atributo title deve estar em negrito. Pois significa que a tarefa está a fazer. 
 - [ ] Exiba também o conteúdo do atributo “id”.
 
-#### ENTREGA:
-- [ ] Devem ser entregues os arquivos HTML5, CSS3 e Javascript do projeto via Git/Github. Você deverá enviar o link do repositório por este formulário: https://forms.gle/CFCEmSgYeFBKXyL16 
-Até o dia 28/09/2021 às 23h59.
+
+### Página de login
+- [ ] Exibir a data atual
+- [ ] Validação dos campos não podem estar vazios

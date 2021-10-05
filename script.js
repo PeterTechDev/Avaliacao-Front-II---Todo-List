@@ -1,22 +1,3 @@
-// let button = document.querySelector('button')
-// button.addEventListener('click', function (event) {
-//     event.preventDefault()
-
-//     let usuario = document.getElementById('username').value
-//     let senha = document.getElementById('password').value
-
-//     fetch('https://jsonplaceholder.typicode.com/todos%27')
-//         .then((response) => response.json())
-//         .then((json) => json.map(json => {
-//             if (json.username == usuario) {
-//                 alert("Usuário encontrado.")
-//             } else {
-//                 console.log("Usuário não encontrado.")
-//             }
-//         }))
-// })
-
-
 // ADCIONAR DATA ATUAL NA TELA 
 const todayDate = document.getElementById('todayDate');
 let data = new Date();
@@ -33,5 +14,36 @@ function today(){
 }
 
 window.onload=()=> todayDate.innerText = today();
+
+//Validação campos vazios
+let name = document.getElementById('name');
+let pass = document.getElementById('password');
+let passConfirm = document.getElementById('passwordConfirm');
+let email = document.getElementById('email');
+
+const verifyEmptyValue=(input)=>{
+    if(input.value == '') {
+        alert(`O campo ${input.name} não pode estar vazio`)
+    } else {
+        console.log(`${input.name} preenchido`);
+    }
+}
+
+let inputsLogin = document.querySelectorAll('input');
+const verifyInputs =()=>{
+    inputsLogin.forEach(input=>{
+        verifyEmptyValue(input);
+    })
+}
+
+
+const form = document.querySelector('form')
+
+form.addEventListener('submit', (event=>{
+    event.preventDefault()
+    console.log('parou');
+    verifyInputs()
+}))
+
 
 
